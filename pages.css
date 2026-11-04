@@ -16,3 +16,7 @@ body>header{top:0;z-index:30}body:not(.inner-page)>header{position:fixed;left:0;
 /* Clip oversized source layers without creating a focus-scroll container. */
 .hero{overflow:clip}
 .hero-pan small{white-space:nowrap}.pan-flush small{width:max-content;position:relative;left:50%;transform:translateX(-50%)}.hero-mineral .mineral-heading span{line-height:inherit}
+
+/* Keep the Shop action above product details in both languages. */
+.catalog-card .catalog-add{top:19.88vw;bottom:auto;transform:translateY(-100%)}
+@media(max-width:700px){.catalog-card .catalog-add{top:42vw}}
