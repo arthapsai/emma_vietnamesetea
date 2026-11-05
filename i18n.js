@@ -122,7 +122,7 @@ hrs|giờ
 A quiet stage where the leaves slowly lose moisture, develop aroma, and prepare for the next transformation.|Một công đoạn lặng lẽ, khi lá trà dần giảm độ ẩm, phát triển hương thơm và sẵn sàng cho bước chuyển hóa tiếp theo.
 {Ancient}|{Truyền thống}
 {Modern}|{Hiện đại}
-EM MÀ is a Vietnamese functional tea brand bringing together traditional tea knowledge and modern science. Sourced exclusively from Vietnam, our teas are made to support different states of mind - from focused mornings to slower evenings.|Êmmà là thương hiệu trà công năng Việt Nam, kết hợp tri thức trà truyền thống với khoa học hiện đại. Với nguồn trà hoàn toàn từ Việt Nam, chúng tôi đồng hành cùng những trạng thái tinh thần khác nhau — từ buổi sáng tập trung đến buổi tối chậm rãi.
+ÊMMÀ is a Vietnamese functional tea brand bringing together traditional tea knowledge and modern science. Sourced exclusively from Vietnam, our teas are made to support different states of mind - from focused mornings to slower evenings.|Êmmà là thương hiệu trà công năng Việt Nam, kết hợp tri thức trà truyền thống với khoa học hiện đại. Với nguồn trà hoàn toàn từ Việt Nam, chúng tôi đồng hành cùng những trạng thái tinh thần khác nhau — từ buổi sáng tập trung đến buổi tối chậm rãi.
 Discover our story →|Câu chuyện của Êmmà →
 From the high altitude forests off the north|Từ những khu rừng trên vùng núi cao phía Bắc
 altitude|độ cao
