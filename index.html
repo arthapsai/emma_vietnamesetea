@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#51253b"><meta name="description" content="Vietnamese teas, thoughtfully selected for modern rituals. Find a little êm mà in your everyday."><title>Êmmà — A little moment, a little tea</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="pages.css"><script src="app.js" defer></script><script src="i18n.js" defer></script><script src="hero.js" defer></script><style>
   .main-product > img[src$="hong-tra-v2.png"],
   .main-product > img[src$="tea-pack-e.png"],
-  .main-product > img[src="assets/imgRectangle17.png"] {
+  .main-product > img[src$="tea-cube-689.png"] {
     position: absolute;
     top: 10.14%;
     left: 50%;
@@ -10,7 +10,7 @@
     height: auto;
     transform: translateX(-50%);
   }
-  .main-product > img[src="assets/imgRectangle17.png"] {
+  .main-product > img[src$="tea-cube-689.png"] {
     aspect-ratio: 1;
     object-fit: cover;
   }
@@ -43,6 +43,23 @@
     .tea-collage .t6 { left: 68%; top: 15.68vw; }
     .tea-collage .t8 { left: 54%; top: 31.78vw; }
   }
+  .hong-tra-previews button {
+    position: relative;
+  }
+  .hong-tra-previews button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(81, 37, 59, .5);
+    pointer-events: none;
+    transition: opacity .18s ease;
+  }
+  .hong-tra-previews button:is(:hover, :focus-visible, [aria-pressed="true"]) {
+    opacity: 1;
+  }
+  .hong-tra-previews button:is(:hover, :focus-visible, [aria-pressed="true"])::after {
+    opacity: 0;
+  }
 </style></head><body>
 <a class="skip" href="shop.html">Skip to collection</a>
 <header><nav aria-label="Main navigation"><div class="nav-left"><a href="shop.html">Shop</a><a href="about.html">About us</a></div><a href="index.html" class="brand" aria-label="Êmmà home"><img src="assets/imgEmmaLogo.svg" alt="Êmmà"></a><div class="nav-right"><button data-action="account" class="account">Account</button><button data-action="language" aria-label="Change language"><img src="assets/imgVector.svg" alt=""></button><button data-action="search" aria-label="Search teas"><img src="assets/imgComponent8.svg" alt=""></button><button data-action="favorites" aria-label="Saved teas"><img src="assets/imgFavorite.svg" alt=""></button><button data-action="cart" aria-label="Shopping bag"><img src="assets/imgVuesaxOutlineBag2.svg" alt=""><span id="cart-count" hidden>0</span></button></div></nav></header>
@@ -54,9 +71,9 @@
 <div class="hero-scene hero-infusion" id="hero-scene-5" data-scene="4" role="group" aria-roledescription="slide" aria-label="A quiet moment with tea" aria-hidden="true" inert><div class="scene-visual warm-burn"><img class="infusion-image" src="assets/hero-infusion-imgImage5.png" alt="Flowers slowly infusing in golden tea"><img class="infusion-texture additive-texture" src="assets/hero-leaves-imgImage2.png" alt=""></div><div class="infusion-gradient"></div><div class="infusion-left"><p>Some days feel</p><p class="infusion-heavier">                 heavier<br>    than others.</p></div><div class="infusion-right"><p>Let the moment be a little êm mà</p><p>with our tea.</p></div><a class="hero-link mono" href="about.html">Discover more →</a></div>
 <div class="hero-controls" role="group" aria-label="Choose a hero scene"><img id="hero-indicator" src="assets/imgFrame87530.svg" alt=""><div class="hero-dot-buttons"><button type="button" data-hero-slide="0" aria-label="Show scene 1" aria-controls="hero-scene-1" aria-current="true"></button><button type="button" data-hero-slide="1" aria-label="Show scene 2" aria-controls="hero-scene-2" aria-current="false"></button><button type="button" data-hero-slide="2" aria-label="Show scene 3" aria-controls="hero-scene-3" aria-current="false"></button><button type="button" data-hero-slide="3" aria-label="Show scene 4" aria-controls="hero-scene-4" aria-current="false"></button><button type="button" data-hero-slide="4" aria-label="Show scene 5" aria-controls="hero-scene-5" aria-current="false"></button></div></div><button type="button" class="hero-pause" aria-label="Pause slideshow" aria-pressed="false">Ⅱ</button><p class="hero-announcement sr-only" aria-live="polite" aria-atomic="true"></p></section>
 <section id="collection" class="collection"><div class="section-title"><h2>Tea <span>Collection</span></h2><p class="tag top">{Functional}</p><p class="tag bottom">{Vietnamese}</p></div><div class="collection-layout"><article class="product-card"><button class="main-product" data-product="black"><img src="hong-tra-v2.png" alt="Hồng Trà black tea tin"></button><div class="swatches hong-tra-previews">
-  <button data-image="../hong-tra-v2.png" aria-label="View tea packaging"><img src="hong-tra-v2.png" alt=""></button>
-  <button data-image="../tea-pack-e.png" aria-label="View black tea detail"><img src="tea-pack-e.png" alt=""></button>
-  <button data-image="imgRectangle17.png" aria-label="View tea leaves"><img src="assets/imgRectangle17.png" alt=""></button>
+  <button data-image="../hong-tra-v2.png" aria-label="View tea packaging" aria-pressed="true"><img src="hong-tra-v2.png" alt=""></button>
+  <button data-image="../tea-pack-e.png" aria-label="View black tea detail" aria-pressed="false"><img src="tea-pack-e.png" alt=""></button>
+  <button data-image="../tea-cube-689.png" aria-label="View tea leaves" aria-pressed="false"><img src="tea-cube-689.png" alt=""></button>
 </div><div class="card-copy"><h3>HỒNG TRÀ</h3><p>Black tea from the highlands of Vietnam, crafted for a grounding cup.</p><p>50g</p><button class="text-link mono" data-product="black">View product →</button></div></article><div class="tea-collage" aria-label="Tea collection"><button data-product="black" class="tile t1"><img src="tea-pack-a.png" alt="Hồng Trà"></button><button data-product="green" class="tile t2"><img src="tea-pack-b.png" alt="Vietnamese green tea"></button><button data-product="oolong" class="tile t5"><img src="tea-pack-c.png" alt="Oolong tea tin"></button><button data-product="oolong" class="tile t6"><img src="tea-pack-d.png" alt="Vietnamese tea"></button><button data-product="oolong" class="tile t8"><img src="tea-pack-e.png" alt="Oolong collection"></button><p>Vietnamese teas, thoughtfully selected for modern rituals.</p></div></div></section>
 <section class="withering"><img class="withering-image" src="assets/imgImage637.png" alt="Tea leaves during indoor withering"><div class="process-content"><p class="mono process-type">(GABA OOLONG)</p><h2>Indoor<br>Withering</h2><p class="mono process-origin">(LÂM ĐỒNG)</p><img class="process-line" src="assets/imgVector28.svg" alt=""><div class="process-stats mono"><p><small>moisture</small><span>-10–20<sup>%</sup></span></p><p><small>withered for</small><span>4-8<sup>hrs</sup></span></p></div><p class="process-description mono">A quiet stage where the leaves slowly lose moisture, develop aroma, and prepare for the next transformation.</p></div></section>
 <section id="about" class="about"><img src="assets/imgVector8.png" class="wash wash-top" alt=""><img src="assets/imgVector7.png" class="wash wash-middle" alt=""><div class="about-copy"><div class="about-heading"><h2>About<br><span>Êmmà</span></h2><span class="tag ancient">{Ancient}</span><span class="tag modern">{Modern}</span></div><p>ÊMMÀ is a Vietnamese functional tea brand bringing together traditional tea knowledge and modern science. Sourced exclusively from Vietnam, our teas are made to support different states of mind - from focused mornings to slower evenings.</p><button class="outline" data-go="about.html">Discover our story →</button></div><div class="harvest-card"><img class="harvest-bg" src="assets/imgImage690.png" alt="Green tea hills"><img class="daily" src="assets/imgDaily1.png" alt=""><p class="mini-origin mono">(Black Tea)<br><br>Bản Pe<br>(Sơn La)</p><h3>Harvesting</h3><p class="harvest-stat mono">Picked<br><b>01-03</b> buds</p><p class="summer mono">Summer flush<br><b>06</b> months</p></div><div class="altitude-card"><img class="altitude-base" src="assets/img301.png" alt=""><img class="altitude-bg" src="assets/imgImage691.png" alt="Vietnamese high altitude forests"><img class="daily" src="assets/imgDaily2.png" alt=""><h3>From the high altitude forests off the north</h3><p class="mono"><small>altitude</small><br>1200-1500<sup>m</sup><br><br>-10–20<sup>%</sup></p></div></section>
@@ -66,4 +83,14 @@
 </main>
 <footer><p class="footer-intro">Tea, thoughtfully made.<br><span>A quiet ritual, rooted in Vietnamese tea culture.</span></p><button class="back-top" aria-label="Back to top"><img src="assets/imgIconOutlinedDirectionsArrowsInCircleUp.svg" alt=""></button><div class="footer-grid"><div><h3>About</h3><a href="about.html">About Emma</a><button data-go="about.html#our-story">Our Story</button><button data-go="about.html#philosophy">Tea Philosophy</button><button data-go="about.html">Journal</button><div class="footer-shop"><h3>Shop</h3><a href="shop.html">Tea Collection</a><a href="shop.html#intentional">Best Sellers</a><a href="shop.html">Gift Sets</a><a href="shop.html">All Products</a></div></div><div><h3>Customer Care</h3><button data-info="Contact Us">Contact Us</button><button data-info="Shipping & Delivery">Shipping & Delivery</button><button data-info="Returns & Exchanges">Returns & Exchanges</button><button data-info="FAQ">FAQ</button><button data-info="Order Tracking">Order Tracking</button><div class="policies"><h3>Policies</h3><button data-info="Privacy Policy">Privacy Policy</button><button data-info="Terms & Conditions">Terms & Conditions</button><button data-info="Shipping Policy">Shipping Policy</button><button data-info="Return & Refund Policy">Return & Refund Policy</button><button data-info="Cookie Policy">Cookie Policy</button></div></div><div class="social"><h3>Follow us</h3><button data-info="Instagram">Instagram</button><button data-info="Facebook">Facebook</button><button data-info="Pinterest">Pinterest</button><button data-info="Tiktok">Tiktok</button></div><div class="newsletter"><h3>Stay connected</h3><p>Notes on tea, rituals, and the stories behind Emma.</p><form id="newsletter-form"><label class="sr-only" for="email">Your email address</label><input id="email" type="email" required placeholder="Your email address"><button type="submit">Submit</button></form><p class="newsletter-note">You can unsubscribe anytime.<br><span>For more details, review our <button data-info="Privacy Policy">Privacy Policy</button>.</span></p><p id="newsletter-status" role="status"></p></div></div><div class="footer-bottom"><p>© 2026 Êmmà. All rights reserved.</p><img src="assets/imgEmmaLogo2.svg" alt="Êmmà"></div></footer>
 <dialog id="modal" aria-labelledby="modal-title"><button class="close" aria-label="Close dialog">×</button><div id="modal-body"></div></dialog><dialog id="cart-drawer" aria-labelledby="cart-title"><div id="cart-content"></div></dialog><div id="toast" role="status"></div>
+<script>
+  const teaPreviews = document.querySelector('.hong-tra-previews');
+  teaPreviews.addEventListener('click', (event) => {
+    const selected = event.target.closest('button[data-image]');
+    if (!selected) return;
+    for (const button of teaPreviews.querySelectorAll('button')) {
+      button.setAttribute('aria-pressed', String(button === selected));
+    }
+  });
+</script>
 </body></html>
